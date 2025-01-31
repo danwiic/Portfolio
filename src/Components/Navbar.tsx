@@ -42,7 +42,7 @@ function NavbarItem() {
       const scrollPosition = window.scrollY;
 
       // Find the section that is currently in view
-      for (let i = 0; i < sectionOffsets.length; i++) {
+      for (let i = 0; i < sectionOffsets.length - 20; i++) {
         if (scrollPosition >= sectionOffsets[i] && (!sectionOffsets[i + 1] || scrollPosition < sectionOffsets[i + 1])) {
           setActiveLink(sections[i].toLowerCase());
           break;
