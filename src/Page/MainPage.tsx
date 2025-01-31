@@ -1,22 +1,17 @@
 import Navbar from "../Components/Navbar";
+import Contact from "./Contact";
+import Home from "./Home";
+import Services from "./Services";
+import Skills from "./Skills";
 
 export default function MainPage() {
     return(
         <div>
             <Navbar >
-            <section id="home" className="h-screen pt-14">
-                1
-            </section>
-
-            <section id="services" className="h-screen">
-                2   
-            </section>
-
-            <section id="skills" className="bg-red-400 h-screen">
-
-            </section>
-           
-           
+                <Home/>
+                <Services/>
+                <Skills/>
+                <Contact/>
            </Navbar>
         </div>
     )
